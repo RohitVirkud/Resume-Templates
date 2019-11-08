@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<title>Portfolio Template</title>  
+	<style type="text/css">
+		
+		body,html
+		{
+			height: 100%;
+			margin: 0;
+			font-family: 'lato',sans-serif;
+			color:#666;
+		}
+		.pic1
+		{ 
+           position: relative;
+           background-position: center;
+           background-image: url('img/beach-blur-boardwalk-132037.jpg');
+           background-size: cover;
+           background-repeat: no-repeat;
+           background-attachment: fixed;
+           /*
+              fixed = for parallax;
+              scroll = for  normal;
+           */
+           min-height: 40%;
+
+		}
+
+		.pText
+		{
+			position: absolute;
+			text-align: center;
+			width: 100%;
+			top: 30%;
+			color: #fff;
+			font-size: 27px;
+			text-transform: uppercase;
+		}
+		.border_trans
+		{
+			position: absolute;
+			text-align: center;
+			width: 100%;
+			top: 40%;
+			color: #fff;
+			font-size: 15px;
+		}
+		.border
+		{
+			color: white;
+		}
+		.colGray
+		{
+			text-decoration: none;
+			font-style: bold;
+			color: #2193b0;
+		}
+		.bio
+		{
+			margin-top: 20px;
+		}
+		.sectionContainer
+		{
+			display: flex;
+			justify-content: space-around;
+		}
+		.about
+		{
+			width: 200%;
+			padding-left: 30px;
+		}
+		p
+		{
+			margin: 10px;
+			padding: 10px;
+		}
+		.downloadResume
+		{
+			text-align: center;
+			text-decoration: none;
+			position: absolute;
+			width: 200px;
+			height: 60px;
+			color: black;
+			font-size: 15px;
+			line-height: 60px;
+
+			text-transform: uppercase;
+			box-sizing: border-box;
+			background: #c0c0aa;  /* fallback for old browsers */
+			background: -webkit-linear-gradient(to right, #1cefff, #c0c0aa);  /* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(to right, #1cefff, #c0c0aa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		}
+		.hire
+		{
+			text-align: center;
+			text-decoration: none;
+			position: absolute;
+			margin-top: 22rem;
+			margin-left: -14.5rem;
+			line-height: 60px;
+			width: 200px;
+			height: 60px;
+			color: black;
+			font-size: 15px;
+			border-radius: 44px;
+			text-transform: uppercase;
+			box-sizing: border-box;
+			background: #00c6ff;  /* fallback for old browsers */
+			background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+			-webkit-animation-iteration-count:infinite;
+			-webkit-animation-delay:1s;
+		}
+		.profile
+		{
+			width: 200%;
+
+		}
+		.profile img
+		{
+			margin-left: 120px;
+			margin-top: 60px;
+			border:2px solid #ddd;
+			box-shadow: 0 0 10px #000;
+			/* for circular image*/ 
+			border-radius: 50%;
+		}
+		h1,h2
+		{
+			color: #6dd5ed;
+		}
+		.basicInfo
+		{
+			width: 200%;
+			margin: auto;
+		}
+		.bar
+		{
+			background: #ddd;
+			display: block;
+			height: 1px;
+			overflow: hidden;
+			box-shadow: 0 0 10px #ddd;
+		}
+		.pi
+		{ 
+            margin-top:50px;
+            margin-bottom: 20px;
+		}
+		.icons
+		{
+			margin-left: 220px;
+		}
+		i 
+		{
+			margin-top: 10px;
+			padding: 10px;
+			transform: translateY(5px);
+			transition: 0.4s;
+		}
+		i:hover
+		{
+			padding: 20px;
+			transform: translateY(0px);
+		}
+		.fa-facebook
+		{
+			color: blue
+		}
+		.fa-twitter
+		{
+			color: skyblue;
+		}
+		.fa-instagram
+		{
+			color: orange;
+		}
+		.fa-youtube
+		{
+			color: red;
+		}
+
+			@media screen and (max-width: 1200px)
+			{
+				.sectionContainer
+				{
+					flex-direction: column;
+					
+				}
+				.about,.basicInfo
+				{
+
+					width: 80%;
+					margin-bottom: 20px;
+					padding: 10px;
+					justify-content: center;
+					align-items: center;
+				}
+				.profile
+				{
+					width: 100%;
+					justify-content: center;
+					align-items: center;
+				}
+				.profile img
+				{
+					margin-left: 20px;
+				}
+
+			}
+
+
+	</style>
+
+
+
+
+</head>
+<body>
+	<div class="pic1 animated fadeInDown">
+		<div class="pText">
+			<span class="border">
+				<center>HI! I'M <a href="#" class="colGray"> MOHIMA ROY </a></center><br><br>
+			</span>
+		</div>
+       <span class="border_trans">
+       	<center class="bio">UX/UI DESIGNER FROM DHAKA,BANGLADESH</center><br><br>
+       </span>
+	</div>
+
+   <div class="sectionContainer">
+	   	<div class="about animated fadeInLeft">
+	   		<p><center><h1>MY STORY</h1></center>Hello,I'm UX/UI Designer and Front End Developer from Dhaka,Bangladesh,I hold masters degree of a web design from Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   		consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+	   		<a href="#Resume" class="downloadResume">Download Resume</a>
+	   		<a class="icons"><i class="fab fa-facebook"></i><i class="fab fa-instagram"></i><i class="fab fa-linkedin" style="color:#0077B5;"></i><i class="fab fa-github" style="color: #211F1F;"></i> </a>
+	   	</div><br><br>
+	   	<div class="profile">
+	   		<img src="img/profile.jpg" width="250px" height="250px">
+	   		<a href="#Resume" class="hire animated pulse">HIRE ME</a>
+	   	</div><br><br><br><br>
+	   	<div class="basicInfo animated fadeInRight">
+	   		<h2 class="pi">PERSONAL INFORMATION</h2>
+	   		<h4>Name : Mohima Roy</h4>
+	   		<span class="bar"><span class="name"></span></span>
+	   		<h4>Age : 24</h4>
+	   		<span class="bar"><span class="name"></span></span>
+	   		<h4>Phone : 9287603063</h4>
+	   		<span class="bar"><span class="name"></span></span>
+	   		<h4>Email : mohimaroy777@gmail.com</h4>
+	   		<span class="bar"><span class="name"></span></span>
+	   		<h4>Address : dhaka,Bangladesh</h4>
+	   		<span class="bar"><span class="name"></span></span>
+	   	</div>
+
+   </div>
+
+
+</body>
+</html>
